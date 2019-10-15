@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PZI - Vježba 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header: Logo tekst i navigacija -->
+      <div class="container">
+        <header>
+          <h2>Pizza Bar</h2>
+          <nav>
+            <a href="#" class="nav-links">Početna</a>
+            <a href="#akcije" class="nav-links">Akcije</a>
+            <a href="#cjenik" class="nav-links">Cjenik</a>
+            <a href="#kontakt" class="nav-links">Kontakt</a>
+          </nav>
+        </header>
+
+        <!-- Cover slika -->
+        <section id="cover">
+          <img src="img/Pizza-cover.png" alt="Pizza Cover" width=100% />
+          <div id="bg-gradient"></div>
+          <div id="cover-text" class="container">
+            <h1>Najbolja pizza u gradu</h1>
+            <small>Dostupna u cijelom gradu</small>
+            <a href="#" class="action-btn">Naruči odmah</a>
+          </div>
+        </section>
+
+        <!-- Akcije -->
+        <section id="akcije">
+          <h2>Odaberi najbolju pizzu</h2>
+          <div>
+            <article>
+              <img
+                src="img/pizzas/margherita.png"
+                alt="Pizza Margherita"
+                width="200"
+              />
+              <h3>Margherita</h3>
+              <p>
+                Vestibulum tincidunt a erat ac pretium. Sed efficitur aliquet
+                consequat. Pellentesque tellus massa, maximus nec mi ut, laoreet
+                feugiat libero. In feugiat rutrum elementum. Fusce ornare ex a
+                massa tempor posuere.
+              </p>
+              <span>Već od: <em>22,00 kn</em></span>
+              <button>Naruči</button>
+            </article>
+            <article>
+              <img
+                src="img/pizzas/capricciosa.png"
+                alt="Pizza Capricciosa"
+                width="200"
+              />
+              <h3>Capricciosa</h3>
+              <p>
+                Vestibulum tincidunt a erat ac pretium. Sed efficitur aliquet
+                consequat. Pellentesque tellus massa, maximus nec mi ut, laoreet
+                feugiat libero. In feugiat rutrum elementum. Fusce ornare ex a
+                massa tempor posuere.
+              </p>
+              <span>Već od: <em>23,00 kn</em></span>
+              <button>Naruči</button>
+            </article>
+            <article>
+              <img
+                src="img/pizzas/pancetta.png"
+                alt="Pizza Pancetta"
+                width="200"
+              />
+              <h3>Pancetta</h3>
+              <p>
+                Vestibulum tincidunt a erat ac pretium. Sed efficitur aliquet
+                consequat. Pellentesque tellus massa, maximus nec mi ut, laoreet
+                feugiat libero. In feugiat rutrum elementum. Fusce ornare ex a
+                massa tempor posuere.
+              </p>
+              <span>Već od: <em>24,00 kn</em></span>
+              <button>Naruči</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- Tablica cjenika -->
+        <section id="cjenik">
+          <h3>Cjenik</h3>
+          <table>
+            <!-- Atribut border je deprecated za HTML5 -->
+            <tr>
+              <th>Pizza</th>
+              <th>Veličina</th>
+              <th>Cijena</th>
+            </tr>
+            <!-- Prvi red -->
+            <tr>
+              <td rowspan="3">Margherita</td>
+              <td>Mala</td>
+              <td>22,00 kn</td>
+            </tr>
+            <tr>
+              <td>Velika</td>
+              <td>34,00 kn</td>
+            </tr>
+            <tr>
+              <td>Jumbo</td>
+              <td>60,00 kn</td>
+            </tr>
+            <!-- Drugi red -->
+            <tr>
+              <td rowspan="3">Capricciosa</td>
+              <td>Mala</td>
+              <td>23,00 kn</td>
+            </tr>
+            <tr>
+              <td>Velika</td>
+              <td>36,00 kn</td>
+            </tr>
+            <tr>
+              <td>Jumbo</td>
+              <td>64,00 kn</td>
+            </tr>
+            <!-- Treći red -->
+            <tr>
+              <td rowspan="3">Pancetta</td>
+              <td>Mala</td>
+              <td>24,00 kn</td>
+            </tr>
+            <tr>
+              <td>Velika</td>
+              <td>38,00 kn</td>
+            </tr>
+            <tr>
+              <td>Jumbo</td>
+              <td>66,00 kn</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Kontakt forma -->
+        <section id="kontakt">
+          <h2>Kontaktirajte nas</h2>
+          <form>
+            <label for="mail">Email</label>
+            <input type="email" name="email" id="mail" placeholder="Email" />
+            <br />
+            <label for="naslov">Naslov</label>
+            <input
+              type="text"
+              name="subject"
+              id="naslov"
+              placeholder="Naslov poruke"
+            />
+            <br />
+            <label for="poruka">Poruka</label>
+            <textarea
+              id="poruka"
+              name="message"
+              cols="8"
+              rows="4"
+              placeholder="Vaša poruka..."
+            ></textarea>
+            <br />
+            <button type="submit">Pošalji</button>
+          </form>
+        </section>
+
+        <!-- Footer: Social media links i copyright -->
+        <footer>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
+            <li><a href="mailto:myemail@fesb.hr">Email</a></li>
+          </ul>
+          <h4>Pizza Bar</h4>
+          <p>
+            &copy;<em> 2018, Sva prava pridržana</em>
+            <br />
+            <strong>Ime Prezime</strong>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
