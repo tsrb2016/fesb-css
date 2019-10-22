@@ -116,6 +116,7 @@ article {
     background-color: rgb(235, 235, 235);
     text-align: center;
     margin: 15px;
+    padding: 5px 0px 10px 0px;
 }
 
 .naruci-btn {
@@ -140,7 +141,8 @@ article:hover {
 
 footer {
     bottom: 0;
-    background-color: rgb(210, 55, 55);
+    margin-top: 20px;
+    background-color: #c00a27;
     width: 100%;
     text-align: center;
 }
